@@ -38,10 +38,6 @@ module.exports = function (stream, el, options) {
         });
     }
 
-    if (adapter.browserDetails.browser === 'safari') {
-        element.setAttribute('playsinline', true);
-    }
-
     element.srcObject = stream;
     return element;
 };
